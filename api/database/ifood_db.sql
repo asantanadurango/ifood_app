@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-03-2022 a las 06:55:23
+-- Tiempo de generación: 05-03-2022 a las 05:52:11
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -122,6 +122,7 @@ ALTER TABLE `tags`
 -- Filtros para la tabla `products_x_tags`
 --
 ALTER TABLE `products_x_tags`
+  ADD CONSTRAINT `fk_product` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_tag` FOREIGN KEY (`tag_id`) REFERENCES `tags` (`id`);
 COMMIT;
 
