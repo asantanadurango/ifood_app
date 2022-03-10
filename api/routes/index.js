@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 // Routes
-const routerGetAllData = require('./route.getAllData');
-const routerSearchById = require('./route.searchById');
-const routerDeleteById = require('./route.deleteById');
-const routerAddProduct = require('./route.addProduct');
-const routerUpdateProduct = require('./route.updateProduct');
+const routerGetAllData = require('./products/route.getAllData.js');
+const routerSearchById = require('./products/route.searchById');
+const routerDeleteById = require('./products/route.deleteById');
+const routerAddProduct = require('./products/route.addProduct');
+const routerUpdateProduct = require('./products/route.updateProduct');
 
 // Middlewares
 router.use(routerGetAllData);
