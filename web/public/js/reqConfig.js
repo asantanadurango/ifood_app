@@ -1,16 +1,16 @@
+const port = '8080';
+
 const reqConfig = {
 	create: {
 		method: 'POST',
 		validation: body => {
-			const { name, salary } = body;
-			if (!name || !salary) {
-				alert(
-					"The fields 'Name' and 'Salary' are required."
-				);
+			const { name, price, img_url } = body;
+			if (!name || !price || !img_url) {
+				alert("The fields 'Name', 'Price' and 'Img' are required.");
 				return;
 			}
 			return {
-				id: '',
+				url: `http://localhost:${port}/products/add`,
 				body: JSON.stringify(body),
 			};
 		},
@@ -19,7 +19,7 @@ const reqConfig = {
 		method: 'GET',
 		validation: ({ id }) => {
 			return {
-				id,
+				url: `http://localhost:${port}/products/${id}`,
 				body: null,
 			};
 		},
@@ -27,13 +27,13 @@ const reqConfig = {
 	update: {
 		method: 'PUT',
 		validation: body => {
-			const { id, name, salary } = body;
-			if ((!id, !name || !salary)) {
+			const { id, name, price } = body;
+			if ((!id, !name || !price)) {
 				alert('All fields are required.');
 				return;
 			}
 			return {
-				id: '',
+				url: `http://localhost:${port}/products/update/${id}`,
 				body: JSON.stringify(body),
 			};
 		},
@@ -46,7 +46,7 @@ const reqConfig = {
 				return;
 			}
 			return {
-				id,
+				url: `http://localhost:${port}/products/delete/${id}`,
 				body: null,
 			};
 		},

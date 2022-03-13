@@ -8,8 +8,8 @@ const inpPrice = document.getElementById('inpPrice');
 const inpImgUrl = document.getElementById('inpImgUrl');
 
 const reqData = async ({ method, validation }, data) => {
-	const { id, body } = validation(data);
-	const { urlApi, defaultOptions } = setFetchParams(id, method, body);
+	const { url, body } = validation(data);
+	const { urlApi, defaultOptions } = setFetchParams(method, body, url);
 	const req = await fetch(urlApi, defaultOptions);
 	const res = await req.json();
 	console.log(res);

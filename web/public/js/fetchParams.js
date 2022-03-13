@@ -1,5 +1,5 @@
-const setFetchParams = (id, method, body) => {
-	const urlApi = `http://localhost:8080/${id}`;
+const setFetchParams = (method, body, url) => {
+	const urlApi = url;
 	const defaultOptions = {
 		method,
 		headers: {
