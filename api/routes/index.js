@@ -2,17 +2,29 @@ const express = require('express');
 const router = express.Router();
 
 // Routes
-const routerGetAllData = require('./products/route.getAllData.js');
-const routerSearchById = require('./products/route.searchById');
-const routerDeleteById = require('./products/route.deleteById');
+
+// Products
+const routerGetAllProducts = require('./products/route.getAllProducts.js');
+const routerSearchProductById = require('./products/route.searchProductById');
 const routerAddProduct = require('./products/route.addProduct');
 const routerUpdateProduct = require('./products/route.updateProduct');
+const routerDeleteProductById = require('./products/route.deleteProductById');
+
+// Users
+const routerAddUser = require('./users/route.addUser');
+const routerGetAllUsers = require('./users/route.getAllData.js');
 
 // Middlewares
-router.use(routerGetAllData);
-router.use(routerSearchById);
+
+// Products
+router.use(routerGetAllProducts);
+router.use(routerSearchProductById);
 router.use(routerAddProduct);
 router.use(routerUpdateProduct);
-router.use(routerDeleteById);
+router.use(routerDeleteProductById);
+
+// Users
+router.use(routerAddUser);
+router.use(routerGetAllUsers);
 
 module.exports = router;

@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 router.use(express.json());
 
-const connection = require('../../database/index');
+const connection = require('../../database');
 
 router.get('/products/:id', (req, res) => {
 	const { id } = req.params;
