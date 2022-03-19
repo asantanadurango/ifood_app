@@ -13,9 +13,10 @@ const routerDeleteProductById = require('./products/route.deleteProductById');
 // Users
 const routerAddUser = require('./users/route.addUser');
 const routerGetAllUsers = require('./users/route.getAllData.js');
+const routerUserLogin = require('./users/route.userLogin.js');
 
 // Middlewares
-
+const userExist = require('./middlewares/userExist.js');
 // Products
 router.use(routerGetAllProducts);
 router.use(routerSearchProductById);
@@ -26,5 +27,6 @@ router.use(routerDeleteProductById);
 // Users
 router.use(routerAddUser);
 router.use(routerGetAllUsers);
+router.use(userExist, routerUserLogin);
 
 module.exports = router;

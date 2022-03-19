@@ -24,6 +24,20 @@ const reqConfig = {
 			};
 		},
 	},
+	login: {
+		method: 'POST',
+		validation: body => {
+			const { email, password } = body;
+			if (!email || !password) {
+				alert("The fields 'E-mail', and 'Password' are required.");
+				return;
+			}
+			return {
+				url: `http://localhost:${port}/users/login`,
+				body: JSON.stringify(body),
+			};
+		},
+	},
 	update: {
 		method: 'PUT',
 		validation: body => {
