@@ -6,10 +6,11 @@ const userExiste = (req, res, next) => {
 		if (!err) {
 			if (results[0]) {
 				const user = results[0];
-				req.body.user = "true";
+				req.body.user = true;
 				next();
 			} else {
-				res.json({ res: "false" });
+				console.log('false')
+				res.json({ res: false });
 			}
 		} else {
 			console.log(err);
