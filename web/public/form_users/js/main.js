@@ -20,10 +20,10 @@ form.addEventListener('click', e => {
 		const sliceMethod = e.target.id.slice(3).toLowerCase();
 		const selectedMethod = reqConfig[sliceMethod];
 		const data = {
-			name: inpName.value,
-			email: inpEmail.value,
-			password: inpPassword.value,
-			adress: inpAdress.value,
+			name: inpName.value.trim(),
+			email: inpEmail.value.trim(),
+			password: inpPassword.value.trim(),
+			adress: inpAdress.value.trim(),
 		};
 		reqData(selectedMethod, data);
 	}
