@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-03-2022 a las 21:54:27
--- Versión del servidor: 10.4.22-MariaDB
--- Versión de PHP: 8.1.2
+-- Tiempo de generación: 14-04-2022 a las 19:49:47
+-- Versión del servidor: 10.4.19-MariaDB
+-- Versión de PHP: 7.3.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,17 +32,18 @@ CREATE TABLE `products` (
   `name` varchar(45) NOT NULL,
   `price` int(11) NOT NULL,
   `img_url` varchar(1000) NOT NULL,
-  `rating` int(11) NOT NULL
+  `rating` int(11) NOT NULL,
+  `category` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `price`, `img_url`, `rating`) VALUES
-(1, 'Hamburguesa sencilla', 3000, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVLKI7QqOKHbZXwCO2FkOSq7dgcaC_iJ9-w&usqp=CAU', 3),
-(2, 'hot dog sencillo', 2000, 'http://eltortazoo.weebly.com/uploads/2/5/5/3/25531214/6729947_orig.jpg', 4),
-(3, 'coca-cola 1lt', 1000, 'https://m.media-amazon.com/images/I/5156FefjlqL._SX425_.jpg', 5);
+INSERT INTO `products` (`id`, `name`, `price`, `img_url`, `rating`, `category`) VALUES
+(1, 'Hamburguesa sencilla', 3000, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVLKI7QqOKHbZXwCO2FkOSq7dgcaC_iJ9-w&usqp=CAU', 3, 'Hamburger'),
+(2, 'hot dog sencillo', 2000, 'http://eltortazoo.weebly.com/uploads/2/5/5/3/25531214/6729947_orig.jpg', 4, 'hotdogs'),
+(3, 'coca-cola 1lt', 1000, 'https://m.media-amazon.com/images/I/5156FefjlqL._SX425_.jpg', 5, 'drinks');
 
 -- --------------------------------------------------------
 
