@@ -5,7 +5,7 @@ router.use(express.json());
 router.post('/users/login', (req, res) => {
 	const { user } = req.body;
 	console.log(user);
-	res.json({ res: user });
+	res.json( user );
 });
 
 module.exports = router;
