@@ -5,8 +5,6 @@ const router = express.Router();
 
 // Products
 const routerGetAllProducts = require('./products/route.getAllProducts.js');
-const routerSearchProductById = require('./products/route.searchProductById');
-const routerSearchProductByCategory = require('./products/route.searchProductByCategory');
 const routerAddProduct = require('./products/route.addProduct');
 const routerUpdateProduct = require('./products/route.updateProduct');
 const routerDeleteProductById = require('./products/route.deleteProductById');
@@ -20,8 +18,6 @@ const routerUserLogin = require('./users/route.userLogin.js');
 const userExist = require('./middlewares/userExist.js');
 // Products
 router.use(routerGetAllProducts);
-router.use(routerSearchProductById);
-router.use(routerSearchProductByCategory);
 router.use(routerAddProduct);
 router.use(routerUpdateProduct);
 router.use(routerDeleteProductById);

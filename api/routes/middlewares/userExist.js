@@ -4,7 +4,7 @@ const userExiste = (req, res, next) => {
 	console.log(req.body);
 	const { email, password } = req.body;
 	connection.query('SElECT * FROM users WHERE email = ? AND password = ?', [email, password], (err, results, fields) => {
-		console.log(results[0]);
+		// console.log(results[0]);
 		if (!err) {
 			if (results[0]) {
 				const user = results[0];
@@ -12,7 +12,7 @@ const userExiste = (req, res, next) => {
 				req.body.user = user;
 				next();
 			} else {
-				console.log('false');
+				// console.log('false');
 				res.json(null);
 			}
 		} else {
