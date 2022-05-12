@@ -73,6 +73,8 @@ INSERT INTO `products` (`id`, `name`, `price`, `img_url`, `rating`, `category`) 
 
 -- --------------------------------------------------------
 
+
+
 --
 -- Estructura de tabla para la tabla `users`
 --
@@ -113,6 +115,28 @@ ALTER TABLE `products`
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
+
+
+
+-- Estructura de tabla para la tabla `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `price` int(11) NOT NULL,
+  `img_url` varchar(1000) NOT NULL,
+  `cant` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  COMMIT;
+
+--
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
