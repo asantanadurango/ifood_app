@@ -5,8 +5,8 @@ router.use(express.json());
 const connection = require('../../database/index');
 
 router.post('/users/add', (req, res) => {
-	const { name, email, password, adress } = req.body;
-	connection.query('INSERT INTO users VALUES(?, ?, ?, ?, ?)', [null, name, email, password, adress], (err, results, fields) => {
+	const { name, email, password, adress, state } = req.body;
+	connection.query('INSERT INTO users VALUES(?, ?, ?, ?, ?, ?)', [null, name, email, password, adress, state], (err, results, fields) => {
 		if (!err) {
 			res.json({
 				res: 'record saved successfully',

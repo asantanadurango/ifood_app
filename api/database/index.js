@@ -8,6 +8,11 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
+// host: 'cesde-moviles2-jueves.chl4iqqludt9.us-east-1.rds.amazonaws.com',
+// 	user: 'admin',
+// 	password: 'cesde-moviles2-jueves',
+// 	database: 'cesde-moviles2-jueves',
+
 // connection.query('SELECT * FROM employees', (err, results, fields) => {
 // 	if (!err) {
 // 		console.log(results);

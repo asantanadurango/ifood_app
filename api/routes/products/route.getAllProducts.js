@@ -4,7 +4,7 @@ router.use(express.json());
 
 const connection = require('../../database');
 
-router.get('/products?/:category?', (req, res) => {
+router.get('/products/:category?', (req, res) => {
 	const { category } = req.params;
 	const query = category ? `SELECT * FROM products WHERE category = '${category}'` : `SELECT * FROM products`
 	console.log('cate');

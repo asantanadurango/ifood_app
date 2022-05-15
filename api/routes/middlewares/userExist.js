@@ -1,6 +1,7 @@
 const connection = require('../../database/index');
 
 const userExiste = (req, res, next) => {
+	console.log("middleware")
 	console.log(req.body);
 	const { email, password } = req.body;
 	connection.query('SElECT * FROM users WHERE email = ? AND password = ?', [email, password], (err, results, fields) => {
