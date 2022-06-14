@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ConfirmPurchase"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#FFFFFF"
+    >
+    <ImageView
+        android:id="@+id/ivFullImage"
+        android:src="@drawable/desayuno"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Product Name"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"
+        >
+    </TextView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/grey"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bordenegro"
+        android:paddingBottom="5dp"
+
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/sector"
+            android:textColor="@color/red"
+
+
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="115dp"
+            android:textColor="@color/black"
+
+            ></TextView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_regresar_negro"
+            android:drawableEnd="@drawable/ic_regresar_negro"
+            android:textColor="@color/white"
+            android:text="@string/back"
+            android:id="@+id/btBackToInicio"
+            android:textSize="10sp"
+            android:paddingEnd="10dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/btLess"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_less_black"
+            android:paddingLeft="10dp"
+            android:enabled="false"
+
+            >
+
+        </Button>
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            >
+
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btPlus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_plus"
+            android:paddingLeft="10dp"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btConfirm"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:textColor="@color/black"
+            android:text="@string/botton2"
+            >
+
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/confirma"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            ></TextView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

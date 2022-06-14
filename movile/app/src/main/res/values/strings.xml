@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string name="IB">Unicuellos</string>
+    <string name="Botton4">Email:</string>
+    <string name="Botton5">Password:</string>
+    <string name="button">L O G I N</string>
+    <string name="botton2">R E G I S T R A R S E</string>
+    <string name="botton5">R E G I S T R A R</string>
+    <string name="botton6">C O N T I N U A R</string>
+    <string name="botton7">R E G I S T R A R</string>
+    <string name="botton8">C O N T I N U A R</string>
+    <string name="etProducto">Nombre del Producto:</string>
+    <string name="etReferences">Referencia:</string>
+    <string name="etCategory">Categoria:</string>
+    <string name="etPrecio">Precio:</string>
+    <string name="etDecripcion">Descripción:</string>
+    <string name="etName">Name:</string>
+    <string name="etIdentif">ID:</string>
+    <string name="etadress">Adress:</string>
+    <string name="etEmail">Email:</string>
+    <string name="etDescription">Description</string>
+    <string name="button4">Continuar</string>
+    <string name="registrar_usuarios">REGISTRAR USUARIOS</string>
+    <string name="tel">Phone Number:</string>
+    <string name="email">Email:</string>
+    <string name="country">country:</string>
+    <string name="password">Password:</string>
+    <string name="back">Atrás</string>
+    <string name="agregar_productos">AGREGAR PRODUCTOS</string>
+    <string name="descripcion">Aca deberia ir una pequeña descripcion del producto con las cosas que se les puede agregar pero eso seria demasiado trabajo para meterle una descripcion unitaria a a cada producto asi que voy a hacer algo generico aca.Saludos</string>
+    <string name="sector">Nombre Tienda(Sector)</string>
+    <string name="time">15-25min</string>
+    <string name="confirma">Confirma tu Orden</string>
+    <string name="carrito">TUS COMPRAS</string>
+    <string name="pagar">Pagar Orden</string>
+</resources>

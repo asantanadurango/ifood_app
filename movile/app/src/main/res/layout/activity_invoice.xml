@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvoiceActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Factura numero:"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            ></TextView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginStart="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Producto"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:layout_marginStart="85dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cant"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            ></TextView>
+        <TextView
+            android:layout_marginStart="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio Unidad"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:gravity="center"
+            android:text="Subtotal"
+            android:textColor="@color/black"
+            android:textSize="15dp"></TextView>
+
+
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+    <Button
+        android:id="@+id/btOutofInvoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_regresar_blanco"
+        android:drawableEnd="@drawable/ic_regresar_blanco"
+        android:text="ver mas"
+        android:background="@color/red"
+        android:gravity="center"
+        android:layout_marginEnd="180dp">
+
+
+    </Button>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="169dp"
+            android:text="TOTAL"
+            android:textColor="@color/black"
+            android:layout_marginEnd="35dp"/>
+    </LinearLayout>
+
+</LinearLayout>

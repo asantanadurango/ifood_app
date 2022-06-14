@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userbackground"
+    android:onClick="createUser"
+    tools:context=".RegistrarUsuarios">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/etAdress"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/botton_rounder_border"
+            android:drawableStart="@drawable/ic_user_black"
+            android:ems="10"
+            android:hint="@string/etadress"
+            android:inputType="textPersonName"
+            android:paddingLeft="6dp"
+            android:textAlignment="inherit"
+            android:textColor="@android:color/holo_red_light"
+            android:textColorHighlight="@android:color/holo_red_dark"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/botton_rounder_border"
+            android:drawableStart="@drawable/ic_user_black"
+            android:ems="10"
+            android:hint="@string/etName"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textColorHighlight="@android:color/holo_red_light"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/botton_rounder_border"
+            android:drawableStart="@drawable/ic_mail"
+            android:ems="10"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textColorHighlight="@android:color/holo_red_light"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/botton_rounder_border"
+            android:drawableStart="@drawable/ic_pass_icon"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textColorHighlight="@android:color/holo_red_light"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <Button
+        android:id="@+id/btCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/botton_rounder_red"
+        android:onClick="createUser"
+        android:text="@string/botton7"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/botton_rounder_red"
+        android:drawableStart="@drawable/ic_regresar_negro"
+        android:drawableEnd="@drawable/ic_regresar_negro"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCreate"
+        app:layout_constraintVertical_bias="0.067"
+        android:onClick="comeBackToLogin"/><![CDATA[
+
+
+
+    ""
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
